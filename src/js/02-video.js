@@ -14,7 +14,7 @@ player.on('timeupdate', throttled);
 player
   .setCurrentTime(timeStamp)
   .then(function (seconds) {
-    // seconds = the actual time that the player seeked to
+    seconds = timeStamp;
   })
   .catch(function (error) {
     switch (error.name) {
